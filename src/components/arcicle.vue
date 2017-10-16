@@ -60,7 +60,7 @@
                 }  else {
                     this.activeKey = 'guide';
                 }
-                console.log(' this.activeKey', this.activeKey);
+                 
             },
             handleNavMenuChange (val) {
                 this.activeKey = val;

@@ -23,7 +23,7 @@
             <Anchor title="版本" h2></Anchor>
             <p>
                 <a href="https://www.npmjs.com/package/iview" target="_blank">
-                    <img src="https://img.shields.io/npm/v/iview.svg?style=flat-square">
+                   <!--  <img src="https://img.shields.io/npm/v/iview.svg?style=flat-square"> -->
                 </a>
             </p>
             <Anchor title="兼容" h2></Anchor>
@@ -54,19 +54,22 @@
 	</IArcicle>
 </template>
 <script>
-import IArcicle from '../../components/arcicle.vue'
+    import IArcicle from '../../components/arcicle.vue'
    import iCode from '../../components/code.vue';
    import Anchor from '../../components/anchor.vue';
    import code from '../../code';
+   import {Slider} from 'iview';
   export default {
     components:{
-   IArcicle,
+     IArcicle,
       iCode,
-      Anchor
+      Anchor,
+      Slider
     },
     data () {
       return {
-            code:code
+            code:code,
+            value: [20, 50]
       }
     }
   }
